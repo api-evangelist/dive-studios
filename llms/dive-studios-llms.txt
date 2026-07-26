@@ -1,0 +1,18 @@
+# DIVE Studios
+
+> DIVE Studios is the #1 global K-entertainment media platform, reaching over 135M Gen Z and Millennial fans through original shows, social franchises, and branded content. We help brands connect with K-culture audiences via DIVE Media (advertising) and DIVE Agency (creator and celebrity campaigns).
+
+## Pages
+
+- [Home](/): Overview of DIVE Studios — global K-entertainment platform, audience, originals, and services.
+- [DIVE Media — Advertise With Us](/advertise): Reach our K-entertainment audience through podcasts, video, and social.
+- [DIVE Agency — For Brands](/for-brands): Creator, influencer, and celebrity marketing campaigns built on K-culture.
+- [Case Studies](/case-studies): Campaigns we've run for global brands across food, beauty, tech, fashion, and travel.
+- [Audience Insights](/audience): Who our 135M+ Gen Z and Millennial K-culture fans are, by vertical.
+- [Samsung ILP Timeline](/samsung-ilp-timeline): Multi-quarter Samsung Influencer Loyalty Program case study.
+- [Contact](/contact): Get in touch for partnerships, advertising, or campaigns.
+
+## Optional
+
+- [Terms & Conditions](/terms-conditions)
+- [Privacy Policy](/privacy-policy)
