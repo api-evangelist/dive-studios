@@ -1,7 +1,13 @@
-generated: '2026-07-18'
+generated: '2026-08-12'
 method: searched
 source: live probe of https://divestudios.io/.well-known/*
 host: https://divestudios.io
+note: >-
+  Every /.well-known/ path probed on the only host DIVE Studios operates
+  (divestudios.io) returned 404. No WellKnown or SecurityTxt pointer is wired in
+  apis.yml because nothing here is a served document — this file records a
+  verified absence, not a discovery surface. Re-probed 2026-08-12; unchanged
+  from the 2026-07-18 probe.
 documents:
 - path: /.well-known/security.txt
   status: 404
@@ -9,7 +15,84 @@ documents:
   status: 404
 - path: /.well-known/oauth-authorization-server
   status: 404
+- path: /.well-known/oauth-protected-resource
+  status: 404
 - path: /.well-known/api-catalog
   status: 404
 - path: /.well-known/ai-plugin.json
   status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+- path: /.well-known/mcp.json
+  status: 404
+- path: /.well-known/dnt-policy.txt
+  status: 404
+- path: /.well-known/gpc.json
+  status: 404
+- path: /.well-known/change-password
+  status: 404
+x-contract-discovery:
+  checked: '2026-08-12'
+  note: >-
+    STEP 0b contract discovery run against divestudios.io (the sole host; no
+    api./developer./docs./app./status./mcp. subdomain resolves). No spec found.
+  probes:
+  - url: https://divestudios.io/openapi.json
+    status: 404
+  - url: https://divestudios.io/openapi.yaml
+    status: 404
+  - url: https://divestudios.io/swagger.json
+    status: 404
+  - url: https://divestudios.io/v1/openapi.json
+    status: 404
+  - url: https://divestudios.io/api-docs
+    status: 200
+    result: html-spa-shell
+  - url: https://divestudios.io/docs
+    status: 200
+    result: html-spa-shell
+  - url: https://divestudios.io/redoc
+    status: 200
+    result: html-spa-shell
+  - url: https://divestudios.io/graphql
+    status: 200
+    result: html-spa-shell
+  - url: https://divestudios.io/api
+    status: 200
+    result: html-spa-shell
+  - url: https://divestudios.io/llms.txt
+    status: 200
+    result: llms.txt served (saved verbatim to llms/dive-studios-llms.txt)
+  - url: https://divestudios.io/sitemap.xml
+    status: 200
+    result: 40 marketing/case-study URLs, no developer or reference page
+  dns:
+  - host: api.divestudios.io
+    result: NXDOMAIN
+  - host: developer.divestudios.io
+    result: NXDOMAIN
+  - host: developers.divestudios.io
+    result: NXDOMAIN
+  - host: docs.divestudios.io
+    result: NXDOMAIN
+  - host: app.divestudios.io
+    result: NXDOMAIN
+  - host: status.divestudios.io
+    result: NXDOMAIN
+  - host: mcp.divestudios.io
+    result: NXDOMAIN
+  - host: trust.divestudios.io
+    result: NXDOMAIN
+  - host: security.divestudios.io
+    result: NXDOMAIN
+  other:
+  - url: https://github.com/divestudios
+    status: 200
+    result: >-
+      organization exists but has no public repositories and no public members;
+      no way to attribute it to DIVE Studios and nothing to harvest
+  - url: https://divestudios.com
+    status: 200
+    result: parked "DiveStudios.com for sale" page — not owned by this company
